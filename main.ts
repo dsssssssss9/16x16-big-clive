@@ -16,6 +16,7 @@ matrix.clear()
 matrix.Brightness(32)
 matrix.show()
 initial_display()
+basic.pause(500)
 basic.forever(function () {
     matrix.setPixel(randint(0, 15), randint(0, 15), neopixel.colors(NeoPixelColors.Black))
     matrix.setPixel(randint(0, 15), randint(0, 15), neopixel.colors(NeoPixelColors.Blue))
