@@ -13,10 +13,11 @@ DigitalPin.P2,
 NeoPixelMode.RGB
 )
 matrix.clear()
-matrix.Brightness(32)
+matrix.Brightness(8)
 matrix.show()
+basic.showIcon(IconNames.Heart)
 initial_display()
-basic.pause(500)
+basic.pause(5000)
 basic.forever(function () {
     matrix.setPixel(randint(0, 15), randint(0, 15), neopixel.colors(NeoPixelColors.Black))
     matrix.setPixel(randint(0, 15), randint(0, 15), neopixel.colors(NeoPixelColors.Blue))
